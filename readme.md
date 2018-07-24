@@ -1,11 +1,11 @@
 # Today's lesson: Making asynchronous programming suck less
 
-##Prereqs
+## Prereqs
 1. Make sure you have the latest LTS (long-term stable) version of [Node.js](https://nodejs.org/en/) installed. You'll need at least Node 8.2 to run these examples. 
 2. Check out this repo and run `npm install` locally.
 3. Run `npx webpack` if you want to recompile the examples from source.
 
-##What is asychronous programming?
+## What is asychronous programming?
 
 A **synchronous** function is one that happens in real time, in a predictable order: Line 1 executes, then line 2, then line 3.
 
@@ -47,7 +47,7 @@ We'll almost certainly get an error:
 Uncaught ReferenceError: todos is not defined
 ``` 
 
-##What is a callback?
+## What is a callback?
 
 A **callback** is a function that is passed as an argument to another function. When function A finishes, it calls function B.
 
@@ -96,7 +96,7 @@ AsynchronousCallbacks.init();
 This method at least avoids the `'todos' is not defined` error, by waiting until the todos are loaded to do something with them, but you
 can already see that the code is getting longer, and is becoming disjointed and hard to follow.
 
-##Combining asynchronous functions, a.k.a. callback hell
+## Combining asynchronous functions, a.k.a. callback hell
 
 What happens when we have to chain multiple asynchronous actions? Let's say that we first have to 
 get the current user, then get the todos for that user.
@@ -188,7 +188,7 @@ doSomething(response => {
 });
 ```
 
-##What is a promise?
+## What is a promise?
 
 A promise is an object. It takes an asynchronous function as an argument and keeps
 track of whether the function has resolved successfully, or has failed for some reason (been rejected).
@@ -237,7 +237,7 @@ doSomethingRisky().then((successMessage) => {
 });
 ```
 
-##Replacing callbacks with promises (and `XMLHttpRequest` with `fetch`)
+## Replacing callbacks with promises (and `XMLHttpRequest` with `fetch`)
 
 `fetch` is a newer replacement for `XMLHttpRequest` that is fully compatible with promises. It's supported
 in every major browser except IE11, but a polyfill is available:
@@ -295,7 +295,7 @@ namespace AsynchronousFetch {
 AsynchronousFetch.init();
 ```
 
-##Combining promises
+## Combining promises
 
 If you need to track a lot of asynchronous actions at once, you can use `Promise.all()` to combine lots of promises into one mega-Promise.
  to merge promises. You can use this for things you might not expect, for example, preloading images.
@@ -348,7 +348,7 @@ namespace CombiningPromises {
 }
 ```
 
-##The future: async / await functions
+## The future: async / await functions
 
 The next version of JavaScript (called ES2016 or ES7) has an even more powerful way to work with Promises.
 Using two new keywords, `async` and `await`, you'll be able to write asynchronous code that looks like it's synchronous.
