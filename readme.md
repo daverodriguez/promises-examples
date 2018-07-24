@@ -302,7 +302,7 @@ AsynchronousFetch.init();
 ## Combining promises
 
 If you need to track a lot of asynchronous actions at once, you can use `Promise.all()` to combine lots of promises into one mega-Promise.
- to merge promises. You can use this for things you might not expect, for example, preloading images.
+You can use this for things you might not expect, for example, preloading images.
 
 ```typescript
 namespace CombiningPromises {
