@@ -27,7 +27,7 @@ console.log(output);
 **Run this example:**
 > Open [dist/synchronous.html](dist/synchronous.html)
 
-An **asynchronous** function is one that involves some latency. Most often, it's because we're retrieving some data from a server, or sending some data from a server.  
+An **asynchronous** function is one that involves some latency. Most often, it's because we're retrieving some data from a server, or sending data to a server.  
 
 ```typescript
 let todos = getTodos(); // Let's assume these are coming from an API endpoint
