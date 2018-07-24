@@ -25,7 +25,7 @@ console.log(output);
 ```
 
 **Run this example:**
-> Open [dist/synchronous.html]()
+> Open [dist/synchronous.html](dist/synchronous.html)
 
 An **asynchronous** function is one that involves some latency. Most often, it's because we're retrieving some data from a server, or sending some data from a server.  
 
@@ -91,7 +91,7 @@ AsynchronousCallbacks.init();
 
 **Run this example:**
 
-> Open [dist/asynchronous-callbacks.html]() (you'll need to run it from a local web server to avoid XHR security errors)
+> Open [dist/asynchronous-callbacks.html](dist/asynchronous-callbacks.html) (you'll need to run it from a local web server to avoid XHR security errors)
 
 This method at least avoids the `'todos' is not defined` error, by waiting until the todos are loaded to do something with them, but you
 can already see that the code is getting longer, and is becoming disjointed and hard to follow.
@@ -170,7 +170,7 @@ CallbackHell.init();
 
 **Run this example:**
 
-> Open [dist/callback-hell.html]() (you'll need to run it from a local web server to avoid XHR security errors)
+> Open [dist/callback-hell.html](dist/callback-hell.html) (you'll need to run it from a local web server to avoid XHR security errors)
 
 Chaining callbacks results in a structure called the "pyramid of doom":
 
@@ -295,6 +295,10 @@ namespace AsynchronousFetch {
 AsynchronousFetch.init();
 ```
 
+**Run this example:**
+
+> Open [dist/asynchronous-fetch.html](dist/asynchronous-fetch.html) (you'll need to run it from a local web server to avoid XHR security errors)
+
 ## Combining promises
 
 If you need to track a lot of asynchronous actions at once, you can use `Promise.all()` to combine lots of promises into one mega-Promise.
@@ -348,6 +352,10 @@ namespace CombiningPromises {
 }
 ```
 
+**Run this example:**
+
+> Open [dist/combining-promises.html](dist/combining-promises.html) (you'll need to run it from a local web server to avoid XHR security errors)
+
 ## The future: async / await functions
 
 The next version of JavaScript (called ES2016 or ES7) has an even more powerful way to work with Promises.
@@ -387,6 +395,10 @@ namespace AsyncAwaitFetch {
 
 AsyncAwaitFetch.init();
 ```
+
+**Run this example:**
+
+> Open [dist/async-await-fetch.html](dist/async-await-fetch.html) (you'll need to run it from a local web server to avoid XHR security errors)
 
 Asynchronous functions are surprisingly well supported already! https://caniuse.com/#feat=async-functions
 TypeScript also supports async/await functions now (in version 1.7 and higher). It will transpile your asynchronous
