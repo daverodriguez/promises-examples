@@ -43,7 +43,7 @@ console.log(output);
 Since we can't predict how long it will take to retrieve the information, it's not safe to ask for the todos, and then expect to immediately do something with them.
 We'll almost certainly get an error:
 
-```js
+```
 Uncaught ReferenceError: todos is not defined
 ``` 
 
