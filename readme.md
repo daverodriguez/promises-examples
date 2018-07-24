@@ -393,5 +393,11 @@ TypeScript also supports async/await functions now (in version 1.7 and higher). 
 code to something even older browsers can work with.
 
 ## More reading:
-ss
-- 
+- [Introduction to ES6 Promises](http://jamesknelson.com/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hell/)
+- [MDN: Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Promise polyfill](https://github.com/stefanpenner/es6-promise)
+- [Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
+- [MDN: Using fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Fetch polyfill](https://github.com/github/fetch)
+- [Fetch with async/await](https://gist.github.com/msmfsd/fca50ab095b795eb39739e8c4357a808)
+- [Fake REST API used in examples for this lesson](https://jsonplaceholder.typicode.com/)
