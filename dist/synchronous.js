@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var user = 'Dave';\r\nvar todos = [\r\n    { id: 1, title: 'Create presentation' },\r\n    { id: 2, title: 'Feed dog' },\r\n];\r\nvar output = '';\r\nfor (var _i = 0, todos_1 = todos; _i < todos_1.length; _i++) {\r\n    var todo = todos_1[_i];\r\n    output = output.concat(\"#\" + todo.id + \": \" + todo.title + \"\\r\\n\");\r\n}\r\nconsole.log(output);\r\n\n\n//# sourceURL=webpack:///./src/synchronous.ts?");
+eval("var user = 'Dave';\r\nvar todos = [\r\n    { id: 1, title: 'Create presentation' },\r\n    { id: 2, title: 'Feed dog' },\r\n];\r\nvar output = '';\r\nfor (var _i = 0, todos_1 = todos; _i < todos_1.length; _i++) {\r\n    var todo = todos_1[_i];\r\n    output = output.concat(\"#\" + todo.id + \": \" + todo.title + \"\\r\\n\");\r\n}\r\nconsole.log(output);\r\ndocument.getElementById('output').innerHTML = output;\r\n\n\n//# sourceURL=webpack:///./src/synchronous.ts?");
 
 /***/ })
 
